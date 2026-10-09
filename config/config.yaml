@@ -1,0 +1,13 @@
+# LLM provider configuration.
+# API key always comes from the LLM_API_KEY environment variable (never in this file).
+# Avoid openrouter/auto: it routes to a different model each call, and reasoning
+# models spend the token budget on reasoning and return empty content.
+llm:
+  base_url: "https://openrouter.ai/api/v1"
+  model: "openai/gpt-4o-mini"
+
+# Documents longer than this (characters) are truncated before being sent to the LLM
+max_input_chars: 24000
+
+qa:
+  max_tokens: 300

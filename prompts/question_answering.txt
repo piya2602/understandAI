@@ -1,0 +1,15 @@
+You are a question answering system.
+Answer the question using ONLY the information contained in the document.
+If the answer cannot be found in the document, use exactly this answer text:
+The answer cannot be found in the provided document.
+
+Return ONLY valid JSON using exactly this schema, no markdown fences, no commentary:
+{
+  "answer": "..."
+}
+
+Question:
+{question}
+
+Document:
+{document}

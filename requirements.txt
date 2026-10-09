@@ -1,0 +1,11 @@
+streamlit>=1.36
+pdfplumber>=0.11
+spacy>=3.7
+vaderSentiment>=3.3
+pydantic>=2.7
+requests>=2.31
+truststore>=0.9
+PyYAML>=6.0
+python-dotenv>=1.0
+pytest>=8.0
+reportlab>=4.0  # test-only: generates PDFs for the PDF tests
